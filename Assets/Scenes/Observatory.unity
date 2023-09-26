@@ -442,17 +442,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 263.8038
+      value: 311.1872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 263.8038
+      value: 311.1872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 263.8038
+      value: 311.1872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
@@ -931,6 +931,74 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1001 &1146901372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 448.39
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 32.534718
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 453.57
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99860805
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.052745625
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -6.047
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4cb81ab1be170440b4fc31a8e2ac5f1,
+        type: 3}
+      propertyPath: m_Name
+      value: Keck_Telescope_Second_Trial
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4cb81ab1be170440b4fc31a8e2ac5f1, type: 3}
 --- !u!1 &1237024831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,17 +1455,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 263.8038
+      value: 311.1872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 263.8038
+      value: 311.1872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 263.8038
+      value: 311.1872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdcf1bb5cc88a824bad6e10b1ceb6fea,
         type: 3}
@@ -1594,3 +1662,4 @@ SceneRoots:
   - {fileID: 815225604}
   - {fileID: 381750564}
   - {fileID: 474980099}
+  - {fileID: 1146901372}
