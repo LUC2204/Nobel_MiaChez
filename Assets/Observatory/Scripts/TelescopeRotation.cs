@@ -13,6 +13,7 @@ public class TelescopeRotation : MonoBehaviour
     private AudioSource audioSource;
 
     private bool hasAudioPlayed = false;
+    private bool startRotation = false; // Flag to start rotation
 
     void Start()
     {
@@ -22,7 +23,8 @@ public class TelescopeRotation : MonoBehaviour
 
     void Update()
     {
-        if (currentRotationAngle < maxRotationAngle)
+        // Check if the rotation should start
+        if (startRotation && currentRotationAngle < maxRotationAngle)
         {
             // Play audio when rotation starts, but only once
             if (!hasAudioPlayed)
@@ -42,5 +44,11 @@ public class TelescopeRotation : MonoBehaviour
             transform.Rotate(rotationThisFrame, 0, 0, Space.Self);
             currentRotationAngle += rotationThisFrame;
         }
+    }
+
+    // Function to start the rotation when called (e.g., from a button press)
+    public void StartRotation()
+    {
+        startRotation = true;
     }
 }
