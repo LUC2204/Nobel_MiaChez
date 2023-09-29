@@ -2,24 +2,45 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Galaxy
-  m_Shader: {fileID: 4800000, guid: bad8e8212c14bde4bb367681e26353ae, type: 3}
-  m_ShaderKeywords: _DETAIL _DUST _GLOW _SGT_DUST _SGT_NEAR _SGT_STARS _STARS
-  m_LightmapFlags: 4
+  m_Shader: {fileID: 4800000, guid: 71898a48e07e54b4cafe875e78f853c9, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BackTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -35,12 +56,32 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ExtraTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FrontTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b75bce40a72beee48b83ec787a8dcb4d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -83,16 +124,32 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SGT_BaseTexture:
         m_Texture: {fileID: 2800000, guid: 4535ddc69c075cd478eb948c8b53c9c2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SGT_DetailTex:
+        m_Texture: {fileID: 2800000, guid: b20403387ea956e4a97b7b93e6df71e0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SGT_DetailTexture:
         m_Texture: {fileID: 2800000, guid: cf14934db40fa0a478f29c564bbd798f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SGT_DistortTex:
+        m_Texture: {fileID: 2800000, guid: b20403387ea956e4a97b7b93e6df71e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SGT_DustTexture:
         m_Texture: {fileID: 2800000, guid: 0f9984345ba545241bc16998256a1d70, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SGT_MainTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SGT_MaskTexture:
@@ -131,14 +188,68 @@ Material:
         m_Texture: {fileID: 11700000, guid: f5ed7c9348ffda342bee93f46dd164c9, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SubsurfaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _AtmosphereThickness: 1
+    - _BillboardKwToggle: 0
+    - _BillboardShadowFade: 0.5
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BlendOp: 0
     - _BumpScale: 1
     - _CW_DisableFog: 0
+    - _CameraFadingEnabled: 0
+    - _CameraFarFadeDistance: 2
+    - _CameraNearFadeDistance: 1
+    - _ClearCoat: 0
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DefDist: 0.5
     - _DefScale: 1
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DistortionBlend: 0.5
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 1
+    - _DistortionStrengthScaled: 0
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EmissionEnabled: 0
+    - _EnvironmentReflections: 1
+    - _Exposure: 1
+    - _FlipbookMode: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -147,17 +258,37 @@ Material:
     - _HasGlow: 1
     - _HasSpherical: 0
     - _HasStars: 1
+    - _HueVariationKwToggle: 0
+    - _ImageType: 0
+    - _Layout: 0
+    - _LightingEnabled: 1
+    - _Mapping: 1
     - _Metallic: 0
+    - _MirrorOnBack: 0
     - _Mode: 0
+    - _NormalMapKwToggle: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: -1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Rotation: 0
+    - _SGT_Age: 0
     - _SGT_BaseScale: 1
+    - _SGT_Brightness: 1
+    - _SGT_ClipNear: 0
+    - _SGT_ClipPower: 1
+    - _SGT_ColorInfluence: 10
     - _SGT_ColorShift: 0
+    - _SGT_Detail: 0
     - _SGT_DetailBias: 0.84
     - _SGT_DetailPower: 0.4
     - _SGT_DetailStrength: 0.31
     - _SGT_DetailTiling: 1
     - _SGT_DetailTwist: 0.91
+    - _SGT_Distort: 0
+    - _SGT_DistortStrength: 0.1
+    - _SGT_DstBlend: 1
     - _SGT_DustAlphaOffset: 1.02
     - _SGT_DustAlphaPower: 50
     - _SGT_DustBias: 0.94
@@ -166,10 +297,15 @@ Material:
     - _SGT_DustScale: 0.2
     - _SGT_DustTiling: 1
     - _SGT_DustTwist: -1.02
+    - _SGT_FadeEdge: 0
+    - _SGT_FadePower: 1
     - _SGT_GlowPower: 7
     - _SGT_GlowStrength: 0.3
     - _SGT_Near: 1
+    - _SGT_NearDistance: 10000
+    - _SGT_NearFade: 0
     - _SGT_NearRangeRecip: 0.01
+    - _SGT_PowerRgb: 0
     - _SGT_RimMax: 5
     - _SGT_RimMin: 2
     - _SGT_SphericalJitter: 0.1
@@ -178,28 +314,61 @@ Material:
     - _SGT_StarsTiling: 3.82
     - _SGT_TextureJitter: 0.1
     - _SGT_TextureScale: 1
+    - _SGT_ZTest: 4
     - _ShapePowerMax: 1
     - _ShapePowerMin: 2
     - _ShapeScale: 0.5
+    - _Shininess: 0.078125
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 0
+    - _SoftParticlesFarFadeDistance: 1
+    - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _SubsurfaceIndirect: 0.25
+    - _SubsurfaceKwToggle: 0
+    - _SunDisk: 2
+    - _SunSize: 0.04
+    - _SunSizeConvergence: 5
+    - _Surface: 0
     - _TextureScale: 1
     - _TextureWarp: 0
+    - _TwoSided: 2
     - _UVSec: 0
+    - _WindQuality: 0
+    - _WireThickness: 100
+    - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GroundColor: {r: 0.36899996, g: 0.34899998, b: 0.34099993, a: 1}
+    - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _SGT_BaseBlend: {r: 0.1, g: 6, b: 0, a: 0}
+    - _SGT_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SGT_DetailScale: {r: 3, g: 50, b: 0, a: 0}
+    - _SGT_DetailSpeed: {r: 5, g: 1, b: 0, a: 0}
+    - _SGT_DistortScale: {r: 0.1, g: 5, b: 0, a: 0}
+    - _SGT_DistortSpeed: {r: 1, g: 0.1, b: 0, a: 0}
     - _SGT_DustColor: {r: 1, g: 0.22844924, b: 0, a: 1}
     - _SGT_DustColorBlend: {r: 1, g: 2, b: 0, a: 0}
     - _SGT_DustFade: {r: 1.02, g: 50, b: 0, a: 0}
     - _SGT_GlowColor: {r: 1, g: 0.7722794, b: 0.61960787, a: 1}
     - _SGT_GlowWeights: {r: 0, g: 1, b: 0, a: 0}
+    - _SGT_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SGT_RimMax: {r: 5, g: 5, b: 5, a: 1}
     - _SGT_RimMin: {r: 10, g: 10, b: 10, a: 1}
+    - _SGT_Scale: {r: 0, g: 0, b: 0, a: 0}
     - _SGT_TextureBlend: {r: 0.1, g: 6, b: 0, a: 0}
     - _SGT_Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TextureBlend: {r: 0.1, g: 6, b: 0, a: 0}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
