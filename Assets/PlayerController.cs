@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public Transform pointA;  // Set this to the transform of point A
     public Transform pointB;  // Set this to the transform of point B
-    public float speed = 5.0f; // Public speed variable that you can adjust in the Inspector
+    public float speed = 1.0f; // Public speed variable that you can adjust in the Inspector
 
     private Transform playerTransform;
     private Vector3 startPosition;
