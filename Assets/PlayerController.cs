@@ -4,11 +4,12 @@ public class PlayerController : MonoBehaviour
 {
     public Transform pointA;  // Set this to the transform of point A
     public Transform pointB;  // Set this to the transform of point B
-    public float speed = 1.0f; // Public speed variable that you can adjust in the Inspector
 
     private Transform playerTransform;
     private Vector3 startPosition;
     private Vector3 endPosition;
+    private float travelTime = 30f;
+    private float maxHorizontalOffset = 1f;
     private float currentTime = 0f;
 
     private void Start()
@@ -23,9 +24,13 @@ public class PlayerController : MonoBehaviour
         currentTime += Time.deltaTime;
 
         // Calculate the interpolation value (0 to 1) based on time
-        float t = Mathf.Clamp01(currentTime / speed);
+        float t = Mathf.Clamp01(currentTime / travelTime);
 
         // Move the player smoothly from A to B
         playerTransform.position = Vector3.Lerp(startPosition, endPosition, t);
+
+        // Add limited left-to-right movement
+        float horizontalOffset = maxHorizontalOffset * Mathf.Sin(Time.time);
+        playerTransform.position += new Vector3(horizontalOffset, 0, 0);
     }
 }
