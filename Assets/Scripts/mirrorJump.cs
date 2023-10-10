@@ -10,6 +10,8 @@ using UnityEngine;
 
 public class mirrorJump: MonoBehaviour
 {
+    public Transform target; // Assign the target object in the Inspector
+
     // How many times it can reflect
     [SerializeField] private int maxReflectionCount = 3;
     // How Far the line goes
@@ -39,12 +41,14 @@ public class mirrorJump: MonoBehaviour
         _transform = this.transform;
         _gameObject = _transform.gameObject;
         initialPosition = this.transform.position + this.transform.forward * 0.75f;
+        this.transform.LookAt(target);
 
     }
 
 
     void Update()
     {
+        this.transform.LookAt(target);
         // resets the points each update, to check and update mirror bounces.
         reflectionPoints = new Dictionary<int, Vector3>();
 
