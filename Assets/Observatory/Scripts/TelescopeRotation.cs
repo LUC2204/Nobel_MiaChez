@@ -51,4 +51,11 @@ public class TelescopeRotation : MonoBehaviour
     {
         startRotation = true;
     }
+
+    // Method to handle minigame success
+    public void OnMinigameSuccess()
+    {
+        // Start the telescope rotation when the minigame is successful
+        StartRotation();
+    }
 }
