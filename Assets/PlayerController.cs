@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Transform playerTransform;
     private Vector3 startPosition;
     private Vector3 endPosition;
-    private float travelTime = 30f;
+    private float travelTime = 50f;  // Increase this value to slow down the movement further
     private float maxHorizontalOffset = 1f;
     private float currentTime = 0f;
 
