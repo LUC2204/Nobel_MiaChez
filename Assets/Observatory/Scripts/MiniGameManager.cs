@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 public class MinigameManager : MonoBehaviour
 {
-    public Button[] buttons; // Reference to the buttons in the correct order
+    public List<Button> buttons; // Reference to the buttons in the correct order
     public GameObject successScript; // Reference to the script to trigger on success
+    public ObservatoryRotate observatoryRotate; // Reference to the ObservatoryRotate script
     public List<Light> buttonLights; // List of point lights associated with buttons
     public Color greenColor = Color.green; // Color for when the button is not clicked
     public Color redColor = Color.red; // Color for when the button is clicked
@@ -37,13 +38,15 @@ public class MinigameManager : MonoBehaviour
             {
                 // Change the color of the point light to red when clicked
                 buttonLights[currentButtonIndex].color = redColor;
+                Debug.Log("Successfully pushed the right buttom");
             }
 
+            
             // Correct button clicked, add it to the clicked buttons list
             clickedButtons.Add(button);
             currentButtonIndex++;
-
-            if (currentButtonIndex == buttons.Length)
+            
+            if (currentButtonIndex == buttons.Count)
             {
                 // All buttons clicked in the correct order
                 Success();
@@ -51,6 +54,7 @@ public class MinigameManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Resetting buttons");
             // Incorrect button clicked, reset the sequence
             ResetSequence();
         }
@@ -80,7 +84,15 @@ public class MinigameManager : MonoBehaviour
             }
         }
 
+        // Trigger the additional success script if available
+        if (observatoryRotate != null)
+        {
+            // Start the rotation in the ObservatoryRotate script
+            observatoryRotate.StartRotation(30f); // You can pass the desired rotation angle
+        }
+
+
         // Reset the sequence for the next round
-        ResetSequence();
+        //ResetSequence();
     }
 }

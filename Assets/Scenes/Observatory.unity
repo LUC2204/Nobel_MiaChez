@@ -1310,7 +1310,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259974380}
   m_LocalRotation: {x: -2.4241307e-11, y: -0, z: 1.4348583e-10, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.08}
+  m_LocalPosition: {x: 0, y: 0, z: -0.005}
   m_LocalScale: {x: 0.92928964, y: 0.9292895, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1318,7 +1318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.9, y: 1}
+  m_AnchoredPosition: {x: 13, y: 41.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &259974382
@@ -1351,13 +1351,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259974380}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 0.025
+  m_Range: 0.05
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2534,19 +2534,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 495064142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 729570224}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 495064143}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &495064144
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3183,7 +3171,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647945563}
   m_LocalRotation: {x: -1.939302e-11, y: -0, z: 1.1478862e-10, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.08}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0431}
   m_LocalScale: {x: 0.92928964, y: 0.92928964, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3191,7 +3179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.8, y: -0.7}
+  m_AnchoredPosition: {x: -7.5, y: 33.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647945565
@@ -3224,13 +3212,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647945563}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 0.025
+  m_Range: 0.05
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3317,22 +3305,22 @@ PrefabInstance:
     - target: {fileID: 848579964192113874, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.0627451
       objectReference: {fileID: 0}
     - target: {fileID: 848579964192113874, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.735849
+      value: 0.20754719
       objectReference: {fileID: 0}
     - target: {fileID: 848579964192113874, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.12842648
+      value: 0.05364898
       objectReference: {fileID: 0}
     - target: {fileID: 848579964192113874, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.1547746
+      value: 0.05960632
       objectReference: {fileID: 0}
     - target: {fileID: 848579964192113886, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
@@ -3539,7 +3527,7 @@ PrefabInstance:
     - target: {fileID: 848579965096908887, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 848579965096908887, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
@@ -3784,7 +3772,7 @@ PrefabInstance:
     - target: {fileID: 7428048668914445327, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1665
+      value: 0.159
       objectReference: {fileID: 0}
     - target: {fileID: 7428048668914445327, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
@@ -3809,7 +3797,7 @@ PrefabInstance:
     - target: {fileID: 7428048668914445327, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.1577
+      value: 1.156
       objectReference: {fileID: 0}
     - target: {fileID: 7428048668914445327, guid: e4819389334c4504290937beeb9cd43b,
         type: 3}
@@ -3920,6 +3908,7 @@ MonoBehaviour:
   - {fileID: 1743062924}
   - {fileID: 1961482990}
   successScript: {fileID: 32663402}
+  observatoryRotate: {fileID: 1668860147}
   buttonLights:
   - {fileID: 1773200260}
   - {fileID: 921820525}
@@ -4442,7 +4431,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921820522}
   m_LocalRotation: {x: -4.848338e-12, y: -0, z: 2.8697131e-11, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.08}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0687}
   m_LocalScale: {x: 0.9292898, y: 0.92928994, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4450,7 +4439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.4, y: -0.6}
+  m_AnchoredPosition: {x: -5, y: 38.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921820524
@@ -4483,13 +4472,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921820522}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 0.025
+  m_Range: 0.05
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -5988,7 +5977,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322260952}
   m_LocalRotation: {x: -9.696567e-12, y: -0, z: 5.7394308e-11, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0801}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0561}
   m_LocalScale: {x: 0.9292897, y: 0.9292899, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5996,7 +5985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1, y: -0.2}
+  m_AnchoredPosition: {x: -1.1, y: 44.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322260954
@@ -6029,13 +6018,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322260952}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 0.025
+  m_Range: 0.05
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6110,15 +6099,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328885570}
   m_LocalRotation: {x: -1.4544796e-11, y: -0, z: 8.6091474e-11, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.08}
-  m_LocalScale: {x: 0.92928964, y: 0.92928976, z: 0.92929}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0181}
+  m_LocalScale: {x: 3.5627346, y: 3.5627348, z: 3.562736}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1954694571}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0.2}
+  m_AnchoredPosition: {x: 0, y: 39.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328885572
@@ -6151,13 +6140,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328885570}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 0.025
+  m_Range: 0.05
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7084,19 +7073,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1612130337}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 729570224}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1612130338}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &1612130339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8661,19 +8638,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1743062923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 729570224}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1743062924}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &1743062925
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8782,7 +8747,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773200257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.08}
+  m_LocalPosition: {x: 0, y: 0, z: -0.014}
   m_LocalScale: {x: 0.92929, y: 0.92929, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8790,7 +8755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: 27, y: 45.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773200259
@@ -8823,13 +8788,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773200257}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 0.025
+  m_Range: 0.05
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -9797,19 +9762,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1954694574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 729570224}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1954694575}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &1954694576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10016,19 +9969,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1961482989}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 729570224}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1961482990}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &1961482991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10137,7 +10078,7 @@ Transform:
   m_GameObject: {fileID: 2001055352}
   serializedVersion: 2
   m_LocalRotation: {x: 0.69832015, y: 0.121296115, z: -0.11558787, w: 0.69589925}
-  m_LocalPosition: {x: 455.512, y: 40.099, z: 468.0508}
+  m_LocalPosition: {x: 455.524, y: 40.099, z: 468.037}
   m_LocalScale: {x: 0.06063197, y: 0.036523, z: 0.036523}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11872,6 +11813,7 @@ GameObject:
   - component: {fileID: 5309430508693523657}
   - component: {fileID: 5309430508694654473}
   - component: {fileID: 1142519824020069174}
+  - component: {fileID: 5309430508696850634}
   m_Layer: 0
   m_Name: Corridor Ceiling Wide
   m_TagString: Untagged
@@ -11879,6 +11821,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5309430508696850634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309430508696850633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f17a3085ce4a6e4aa28e5ced120ae8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons: []
+  successScript: {fileID: 0}
+  observatoryRotate: {fileID: 0}
+  buttonLights: []
+  greenColor: {r: 0, g: 1, b: 0, a: 1}
+  redColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &5309430508696850639
 GameObject:
   m_ObjectHideFlags: 0
