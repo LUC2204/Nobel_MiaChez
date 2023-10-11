@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewBlackHole.unity
     guid: 4cd2a8fb470a1da4296d7d4525f4951f
+  - enabled: 1
+    path: Assets/Scenes/Carolina scene.unity
+    guid: d7f9500d1ffb16f408c0986c7a7fffb0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 765a45880a9bd784f9dfc210ac5cb197,
       type: 2}
