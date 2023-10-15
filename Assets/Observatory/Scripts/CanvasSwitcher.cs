@@ -65,7 +65,7 @@ public class CanvasSwitcher : MonoBehaviour
 
     private IEnumerator ChangeSceneAfterDelay()
     {
-        yield return new WaitForSeconds(5f); // Wait for 5 seconds
+        yield return new WaitForSeconds(10f); // Wait for 5 seconds
 
         // Change the scene (replace "YourSceneName" with the actual scene name)
         SceneManager.LoadScene("Observatory");

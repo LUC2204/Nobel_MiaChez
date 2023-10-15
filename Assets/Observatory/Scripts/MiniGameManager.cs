@@ -10,6 +10,9 @@ public class MinigameManager : MonoBehaviour
     public List<Light> buttonLights; // List of point lights associated with buttons
     //public Color greenColor = Color.green; // Color for when the button is not clicked
     public Color redColor = Color.red; // Color for when the button is clicked
+    public AudioSource audioSource1;
+    public AudioClip successAudioClip;
+    public GameObject successObjectToActivate;
 
     private List<Button> clickedButtons = new List<Button>();
     private int currentButtonIndex = 0;
@@ -93,6 +96,18 @@ public class MinigameManager : MonoBehaviour
             observatoryRotate.StartRotation(30f); // You can pass the desired rotation angle
         }
 
+        // Play the success audio clip
+        if (audioSource1 != null && successAudioClip != null)
+        {
+            audioSource1.clip = successAudioClip;
+            audioSource1.Play();
+        }
+
+        // Activate the success object
+        if (successObjectToActivate != null)
+        {
+            successObjectToActivate.SetActive(true);
+        }
 
         // Reset the sequence for the next round
         //ResetSequence();
