@@ -99,7 +99,7 @@ Material:
     - _SGT_Near: 0
     - _SGT_NearRangeRecip: 1
     - _SGT_TextureJitter: 1.5
-    - _SGT_TextureScale: 0.425
+    - _SGT_TextureScale: 1.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
