@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/BNG Framework/Integrations/VR Builder/vrif-integration-manual.pdf.meta
 guid: bce5efdb19f403f4bb3072f8a1d94b57
+========
+guid: 0c1e07aa825ee15479a100b6203cac54
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/BNG Framework/Integrations/Oculus Integration.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
