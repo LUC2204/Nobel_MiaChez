@@ -4,9 +4,9 @@ using System.Collections;
 
 public class PlaySequentialAudio : MonoBehaviour
 {
-    public AudioSource audioSource1; // Reference to the first Audio Source component
-    public AudioSource audioSource2; // Reference to the second Audio Source component
-    private bool isFirstButtonPress = true; // Track the first button press
+    public AudioSource audioSource1; 
+    public AudioSource audioSource2; 
+    private bool isFirstButtonPress = true; 
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class PlaySequentialAudio : MonoBehaviour
             audioSource2 = gameObject.AddComponent<AudioSource>();
         }
 
-        // Add a listener to the button's click event
+        
         Button button = GetComponent<Button>();
         if (button != null)
         {
@@ -38,11 +38,11 @@ public class PlaySequentialAudio : MonoBehaviour
     {
         if (isFirstButtonPress)
         {
-            // Play the first audio source
+            
             audioSource1.Play();
             isFirstButtonPress = false;
 
-            // Start a coroutine to play the second audio source after the first one
+            
             StartCoroutine(PlaySecondAudioAfterFirst());
         }
     }

@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class AdaptiveOptics : MonoBehaviour
 {
-    public Image monitorImage; // Reference to the Image component displaying the picture
-    public Sprite initialPicture; // The initial picture
-    public Sprite updatedPicture; // The picture to display after clicking the button
-    public AudioSource audioSource; // Reference to the AudioSource component
+    public Image monitorImage; 
+    public Sprite initialPicture; 
+    public Sprite updatedPicture; 
+    public AudioSource audioSource; 
+    public Text buttonText;
+    public GameObject[] gameObjectsToActivate;
     private bool pictureChanged = false;
 
     private void Start()
@@ -44,10 +46,20 @@ public class AdaptiveOptics : MonoBehaviour
             audioSource.Play();
         }
 
-        // Start a coroutine to change the scene after a delay
+        // Make the text on the button disappear
+        if (buttonText != null)
+        {
+            buttonText.text = "";
+        }
+
+        foreach (GameObject go in gameObjectsToActivate)
+        {
+            go.SetActive(true);
+        }
+
         StartCoroutine(ChangeSceneAfterDelay(16f)); // Change to the desired scene delay
     }
-
+        
     private void DisplayInitialPicture()
     {
         monitorImage.sprite = initialPicture;
@@ -68,3 +80,4 @@ public class AdaptiveOptics : MonoBehaviour
         SceneManager.LoadScene("Space Galaxy Scene"); // Replace with your scene name or index
     }
 }
+    
