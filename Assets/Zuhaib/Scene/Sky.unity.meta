@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Zuhaib/Scene/Sky.unity.meta
 guid: 7fa0b44e6cc88994f859bc2ec4930dd5
+========
+guid: a2cd75bab3f36464db78dc3609b132fd
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/BNG Framework/Integrations/SteamVR.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

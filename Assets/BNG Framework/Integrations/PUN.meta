@@ -1,6 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: b2b62af4353d7b94cb74ee8074c88bb3
 folderAsset: yes
+=======
+<<<<<<<< Updated upstream:Assets/Scenes/Carolina scene.unity.meta
+guid: d7f9500d1ffb16f408c0986c7a7fffb0
+========
+guid: 17a1ba8cc781f544c9576660b522c452
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/BNG Framework/Integrations/PUN.meta
+>>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 
