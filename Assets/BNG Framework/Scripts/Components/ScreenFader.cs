@@ -15,12 +15,12 @@ namespace BNG {
         public Color FadeColor = Color.black;
 
         [Tooltip("How fast to fade in / out")]
-        public float FadeInSpeed = 6f;
+        public float FadeInSpeed;
 
-        public float FadeOutSpeed = 6f;
+        public float FadeOutSpeed;
 
         [Tooltip("Wait X seconds before fading scene in")]
-        public float SceneFadeInDelay = 1f;
+        public float SceneFadeInDelay;
 
         GameObject fadeObject;
         RectTransform fadeObjectRect;
@@ -95,6 +95,7 @@ namespace BNG {
             yield return new WaitForSeconds(delaySeconds);
 
             DoFadeOut();
+            Debug.Log("DoFadeOut called");
         }
 
         /// <summary>
@@ -124,6 +125,7 @@ namespace BNG {
 
             fadeRoutine = doFade(canvasGroup.alpha, 0);
             StartCoroutine(fadeRoutine);
+
         }
 
         public virtual void SetFadeLevel(float fadeLevel) {
@@ -165,6 +167,7 @@ namespace BNG {
                 updateImageAlpha(alpha);
 
                 yield return new WaitForEndOfFrame();
+                Debug.Log("DoFadeOut called");
             }
 
             yield return new WaitForEndOfFrame();
