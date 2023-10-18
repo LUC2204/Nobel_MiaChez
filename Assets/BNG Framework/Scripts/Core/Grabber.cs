@@ -12,7 +12,7 @@ namespace BNG {
     /// </summary>
     [RequireComponent(typeof(GrabbablesInTrigger))]
     public class Grabber : MonoBehaviour {
-
+ 
 
         [Header("Hand Side")]
         /// <summary>
