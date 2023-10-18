@@ -10,6 +10,7 @@ namespace BNG {
     /// </summary>
     public class Grabbable : MonoBehaviour {
 
+        public Transform OriginalSpawnPoint;
         /// <summary>
         /// Is this object currently being held by a Grabber
         /// </summary>
@@ -482,6 +483,7 @@ namespace BNG {
             col = GetComponent<Collider>();
             rigid = GetComponent<Rigidbody>();
             input = InputBridge.Instance;
+ 
 
             events = GetComponents<GrabbableEvents>().ToList();
             collisions = new List<Collider>();
