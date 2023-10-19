@@ -13,15 +13,8 @@ public class PlayerControllerBlackHole : MonoBehaviour
     private Vector3 startPosition;
     private Vector3 endPosition;
     private float currentTime = 0f;
+    private bool hasReachedPointB = false;
     private bool hasReachedPointC = false;
-
-    private enum MovementState
-    {
-        MovingToB,
-        MovingToC
-    }
-
-    private MovementState currentState = MovementState.MovingToB;
 
     private void Start()
     {
@@ -34,39 +27,33 @@ public class PlayerControllerBlackHole : MonoBehaviour
     {
         currentTime += Time.deltaTime;
 
-        if (currentState == MovementState.MovingToB)
+        if (currentTime < travelTimeAB && !hasReachedPointB)
         {
-            if (currentTime < travelTimeAB)
-            {
-                // Calculate the interpolation value (0 to 1) based on time for segment AB
-                float t = Mathf.Clamp01(currentTime / travelTimeAB);
+            // Calculate the interpolation value (0 to 1) based on time for segment AB
+            float t = Mathf.Clamp01(currentTime / travelTimeAB);
 
-                // Move the player smoothly from A to B
-                playerTransform.position = Vector3.Lerp(startPosition, endPosition, t);
-            }
-            else
-            {
-                // Transition to moving to point C
-                currentState = MovementState.MovingToC;
-                currentTime = 0f;
-                startPosition = pointB.position;
-                endPosition = pointC.position;
-                hasReachedPointC = false;
-            }
+            // Move the player smoothly from A to B with a circular motion
+            playerTransform.position = Vector3.Lerp(startPosition, endPosition, t);
         }
-        else if (currentState == MovementState.MovingToC)
+        else if (!hasReachedPointB)
         {
-            if (currentTime < travelTimeBC)
-            {
-                // Calculate the interpolation value (0 to 1) based on time for segment BC
-                float t = Mathf.Clamp01(currentTime / travelTimeBC);
+            // Transition to moving to point C
+            hasReachedPointB = true;
+            currentTime = 0f;
+            startPosition = pointB.position;
+            endPosition = pointC.position;
+        }
 
-                // Move the player smoothly from B to C
-                playerTransform.position = Vector3.Lerp(startPosition, endPosition, t);
-            }
-            else if (!hasReachedPointC)
+        if (hasReachedPointB && currentTime < travelTimeBC)
+        {
+            // Calculate the interpolation value (0 to 1) based on time for segment BC
+            float t = Mathf.Clamp01(currentTime / travelTimeBC);
+
+            // Move the player smoothly from B to C in a linear path
+            playerTransform.position = Vector3.Lerp(startPosition, endPosition, t);
+
+            if (hasReachedPointC == false && t >= 1)
             {
-                // Player has reached point C
                 hasReachedPointC = true;
                 PlayAudioAtPointC();
             }
@@ -78,6 +65,7 @@ public class PlayerControllerBlackHole : MonoBehaviour
         if (audioSource != null)
         {
             audioSource.Play();
+            Debug.Log("Audio played at point C.");
         }
     }
 }
