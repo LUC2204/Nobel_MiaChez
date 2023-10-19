@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayDelayedAudio : MonoBehaviour
 {
     public AudioSource audioSource; // Reference to the Audio Source component
-    public float delayInSeconds = 13f; // Delay in seconds before playing the audio
+    public float delayInSeconds; // Delay in seconds before playing the audio
 
     private void Start()
     {
