@@ -8,19 +8,17 @@ public class MinigameManager : MonoBehaviour
     public GameObject successScript; // Reference to the script to trigger on success
     public ObservatoryRotate observatoryRotate; // Reference to the ObservatoryRotate script
     public List<Light> buttonLights; // List of point lights associated with buttons
+
     public Color greenColor = Color.green; // Color for when the button is not clicked
-    public Color redColor = Color.red; // Color for when the button is clicked
+    public AudioSource audioSource1;
+    public AudioClip successAudioClip;
+    public GameObject successObjectToActivate;
 
     private List<Button> clickedButtons = new List<Button>();
     private int currentButtonIndex = 0;
 
     private void Start()
     {
-        // Set the initial color of the lights to green
-        foreach (Light light in buttonLights)
-        {
-            light.color = greenColor;
-        }
 
         // Attach click listeners to each button
         foreach (Button button in buttons)
@@ -36,9 +34,14 @@ public class MinigameManager : MonoBehaviour
         {
             if (currentButtonIndex >= 0 && currentButtonIndex < buttonLights.Count)
             {
-                // Change the color of the point light to red when clicked
-                buttonLights[currentButtonIndex].color = redColor;
+                // Set the button color to green
+                ColorBlock colors = button.colors;
+                colors.pressedColor = greenColor;
+                button.colors = colors;
+
                 Debug.Log("Successfully pushed the right buttom");
+                //button.gameObject.SetActive(false); // Do something when the button is pressed
+                button.interactable = false;
             }
 
             
@@ -56,21 +59,10 @@ public class MinigameManager : MonoBehaviour
         {
             Debug.Log("Resetting buttons");
             // Incorrect button clicked, reset the sequence
-            ResetSequence();
+           
         }
     }
 
-    private void ResetSequence()
-    {
-        clickedButtons.Clear();
-        currentButtonIndex = 0;
-
-        // Reset the color of all lights associated with buttons to green
-        foreach (Light light in buttonLights)
-        {
-            light.color = greenColor;
-        }
-    }
 
     private void Success()
     {
@@ -91,6 +83,18 @@ public class MinigameManager : MonoBehaviour
             observatoryRotate.StartRotation(30f); // You can pass the desired rotation angle
         }
 
+        // Play the success audio clip
+        if (audioSource1 != null && successAudioClip != null)
+        {
+            audioSource1.clip = successAudioClip;
+            audioSource1.Play();
+        }
+
+        // Activate the success object
+        if (successObjectToActivate != null)
+        {
+            successObjectToActivate.SetActive(true);
+        }
 
         // Reset the sequence for the next round
         //ResetSequence();

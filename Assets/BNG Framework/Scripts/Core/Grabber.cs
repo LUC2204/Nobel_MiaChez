@@ -12,6 +12,7 @@ namespace BNG {
     /// </summary>
     [RequireComponent(typeof(GrabbablesInTrigger))]
     public class Grabber : MonoBehaviour {
+ 
 
         [Header("Hand Side")]
         /// <summary>
@@ -622,10 +623,10 @@ namespace BNG {
         }
 
         public virtual void TryRelease() {
-            if (HeldGrabbable != null && HeldGrabbable.CanBeDropped) {
-                HeldGrabbable.DropItem(this);
-            }
 
+                // Drop the Grabbable
+                HeldGrabbable.DropItem(this);
+            
             // No longer try to bring flying grabbable to us
             resetFlyingGrabbable();
         }

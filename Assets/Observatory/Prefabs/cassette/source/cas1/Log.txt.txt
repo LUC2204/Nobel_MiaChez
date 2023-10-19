@@ -1,0 +1,10 @@
+
+January 11, 2022
+
+	- New Texture
+
+January 10, 2022
+
+	- Fixed Simetry
+	- Fixed Normals
+	- New UV Layout

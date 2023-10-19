@@ -1,6 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 52fef0785d0351143a9f013ffd0dfdb7
 folderAsset: yes
+=======
+<<<<<<<< Updated upstream:Assets/Scenes/NewBlackHole.unity.meta
+guid: 4cd2a8fb470a1da4296d7d4525f4951f
+========
+guid: 147446012ff6e3a468ac982e06411add
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/BNG Framework/Integrations/Pico.meta
+>>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 
