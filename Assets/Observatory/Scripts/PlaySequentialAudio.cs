@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlaySequentialAudio : MonoBehaviour
 {
-    public AudioSource audioSource1; // The first audio source to play immediately
+    /*public AudioSource audioSource1; // The first audio source to play immediately
     public AudioSource audioSource2; // The second audio source to play after a delay
     public float delay; // Delay time for the second audio source
 
@@ -43,4 +43,5 @@ public class PlaySequentialAudio : MonoBehaviour
             coroutineHandler.StartDelayedAudioCoroutine(delay, audioSource2);
         }
     }
+    */
 }

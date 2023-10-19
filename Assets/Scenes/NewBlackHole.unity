@@ -5139,7 +5139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenFader: {fileID: 888637949}
-  delayInSeconds: 5
+  delayInSeconds: 50
+  fadeOutTime: 0.1
 --- !u!1 &2036811290
 GameObject:
   m_ObjectHideFlags: 0
