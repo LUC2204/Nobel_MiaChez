@@ -1584,7 +1584,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7b93ea874529ebc4d88656cbedf00849, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a99e4f1f57ed9d8478a8a3a6eabfed54, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2645,7 +2645,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 05f4548fc7ad96a4b9e5553868297a20, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.522
+  m_Volume: 0.55
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6003,7 +6003,7 @@ MonoBehaviour:
   - {fileID: 259974383}
   greenColor: {r: 0, g: 1, b: 0, a: 1}
   audioSource1: {fileID: 169769269}
-  successAudioClip: {fileID: 8300000, guid: 7b93ea874529ebc4d88656cbedf00849, type: 3}
+  successAudioClip: {fileID: 8300000, guid: a99e4f1f57ed9d8478a8a3a6eabfed54, type: 3}
   successObjectToActivate: {fileID: 2081649900}
 --- !u!224 &729712295 stripped
 RectTransform:
@@ -7733,7 +7733,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2f1b7629949f29a409281b19cb4df82c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8f5efb37a1d445c4184a1b435189c738, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10026,7 +10026,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f4c9822917e024544a594b048fa83633, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e1579821b39134142ac760fab2efe0d1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -18465,7 +18465,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bac55efa80ff145449642f0d92dcd967, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b4832d713ae38ed4b865e4d3c3bff53c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

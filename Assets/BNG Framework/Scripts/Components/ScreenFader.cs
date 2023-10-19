@@ -167,7 +167,7 @@ namespace BNG {
                 updateImageAlpha(alpha);
 
                 yield return new WaitForEndOfFrame();
-                Debug.Log("DoFadeOut called");
+               
             }
 
             yield return new WaitForEndOfFrame();
