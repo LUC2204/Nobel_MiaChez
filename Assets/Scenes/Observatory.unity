@@ -6003,7 +6003,7 @@ MonoBehaviour:
   - {fileID: 259974383}
   greenColor: {r: 0, g: 1, b: 0, a: 1}
   audioSource1: {fileID: 169769269}
-  successAudioClip: {fileID: 8300000, guid: 7b93ea874529ebc4d88656cbedf00849, type: 3}
+  successAudioClip: {fileID: 8300000, guid: a99e4f1f57ed9d8478a8a3a6eabfed54, type: 3}
   successObjectToActivate: {fileID: 2081649900}
 --- !u!224 &729712295 stripped
 RectTransform:
