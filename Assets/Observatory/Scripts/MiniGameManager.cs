@@ -9,7 +9,7 @@ public class MinigameManager : MonoBehaviour
     public ObservatoryRotate observatoryRotate; // Reference to the ObservatoryRotate script
     public List<Light> buttonLights; // List of point lights associated with buttons
 
-    public Color greenColor = Color.green; // Color for when the button is not clicked
+    public Color greenColor = new Color(255, 255, 0, 255); // Color for when the button is not clicked
     public AudioSource audioSource1;
     public AudioClip successAudioClip;
     public GameObject successObjectToActivate;
@@ -35,8 +35,11 @@ public class MinigameManager : MonoBehaviour
             if (currentButtonIndex >= 0 && currentButtonIndex < buttonLights.Count)
             {
                 // Set the button color to green
+                
+                
                 ColorBlock colors = button.colors;
-                colors.pressedColor = greenColor;
+                
+                colors.disabledColor = greenColor;
                 button.colors = colors;
 
                 Debug.Log("Successfully pushed the right buttom");
@@ -57,6 +60,13 @@ public class MinigameManager : MonoBehaviour
         }
         else
         {
+            foreach (Button butt in buttons) {
+                ColorBlock colors = butt.colors;
+                colors.disabledColor = greenColor;
+                butt.colors = colors;
+                butt.interactable = true;
+            }
+            currentButtonIndex = 0;
             Debug.Log("Resetting buttons");
             // Incorrect button clicked, reset the sequence
            
