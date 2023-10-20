@@ -2951,7 +2951,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2683195716758895196, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1982302933}
+      addedObject: {fileID: 1982302928}
     - targetCorrespondingSourceObject: {fileID: 2683195716758895198, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       insertIndex: -1
@@ -5350,7 +5350,7 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &1982302933
+--- !u!114 &1982302928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5365,9 +5365,6 @@ MonoBehaviour:
   screenFader: {fileID: 888637949}
   delayInSeconds: 45
   fadeOutTime: 0.9
-  _audioFadeout: {fileID: 0}
-  _audioSource: {fileID: 0}
-  fadeOutColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2036811290
 GameObject:
   m_ObjectHideFlags: 0
