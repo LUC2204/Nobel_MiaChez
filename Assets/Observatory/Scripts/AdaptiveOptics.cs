@@ -77,7 +77,7 @@ public class AdaptiveOptics : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // Change to the desired scene
-        SceneManager.LoadScene("Space Galaxy Scene"); // Replace with your scene name or index
+        //SceneManager.LoadScene("Space Galaxy Scene"); // Replace with your scene name or index
     }
 }
     
