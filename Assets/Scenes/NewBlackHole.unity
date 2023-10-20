@@ -1324,6 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256612482}
   - component: {fileID: 256612483}
+  - component: {fileID: 256612484}
   m_Layer: 0
   m_Name: AudiofileAwake
   m_TagString: Untagged
@@ -1357,7 +1358,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0538eefdb1efdea49a631ad7c8e8c719, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1442,6 +1443,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &256612484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256612481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efe203d3d108c544a19cb92f4aa5da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 256612483}
+  delayInSeconds: 3.5
 --- !u!1 &279628106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8516297021300253504, guid: 4ac7df741a9c0a2418ec19477729ee3d,
@@ -2895,7 +2910,7 @@ PrefabInstance:
     - target: {fileID: 4276642494963342732, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
       propertyPath: SceneFadeInDelay
-      value: 0.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4276642494963342732, guid: 4ac7df741a9c0a2418ec19477729ee3d,
         type: 3}
@@ -3771,7 +3786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1386698400}
-  delayInSeconds: 12
+  delayInSeconds: 15.5
 --- !u!1 &1394420386
 GameObject:
   m_ObjectHideFlags: 0
