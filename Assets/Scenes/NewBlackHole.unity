@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0031093494, g: 0.0027564813, b: 0.003310872, a: 1}
+  m_IndirectSpecularColor: {r: 0.0031225898, g: 0.0027629696, b: 0.0033275676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5365,6 +5365,9 @@ MonoBehaviour:
   screenFader: {fileID: 888637949}
   delayInSeconds: 45
   fadeOutTime: 0.9
+  _audioFadeout: {fileID: 0}
+  _audioSource: {fileID: 0}
+  fadeOutColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2036811290
 GameObject:
   m_ObjectHideFlags: 0
