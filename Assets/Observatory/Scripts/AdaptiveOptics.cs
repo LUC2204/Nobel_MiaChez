@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class AdaptiveOptics : MonoBehaviour
 {
-    public Image monitorImage; 
-    public Sprite initialPicture; 
-    public Sprite updatedPicture; 
-    public AudioSource audioSource; 
+    public Image monitorImage;
+    public Sprite initialPicture;
+    public Sprite updatedPicture;
+    public AudioSource audioSource;
     public Text buttonText;
     public GameObject[] gameObjectsToActivate;
     private bool pictureChanged = false;
+    private bool audioPlayed = false; // Add this flag
 
     private void Start()
     {
@@ -40,10 +41,11 @@ public class AdaptiveOptics : MonoBehaviour
             DisplayUpdatedPicture();
         }
 
-        // Play the audio when the button is pressed
-        if (audioSource != null)
+        // Play the audio when the button is pressed, but only if it hasn't been played already
+        if (audioSource != null && !audioPlayed)
         {
             audioSource.Play();
+            audioPlayed = true; // Set the flag to true to prevent playing audio again
         }
 
         // Make the text on the button disappear
@@ -59,7 +61,7 @@ public class AdaptiveOptics : MonoBehaviour
 
         StartCoroutine(ChangeSceneAfterDelay(16f)); // Change to the desired scene delay
     }
-        
+
     private void DisplayInitialPicture()
     {
         monitorImage.sprite = initialPicture;
@@ -80,4 +82,3 @@ public class AdaptiveOptics : MonoBehaviour
         //SceneManager.LoadScene("Space Galaxy Scene"); // Replace with your scene name or index
     }
 }
-    
