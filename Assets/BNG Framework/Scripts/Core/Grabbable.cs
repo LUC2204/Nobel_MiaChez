@@ -10,6 +10,7 @@ namespace BNG {
     /// </summary>
     public class Grabbable : MonoBehaviour {
 
+        
         public Transform OriginalSpawnPoint;
         /// <summary>
         /// Is this object currently being held by a Grabber

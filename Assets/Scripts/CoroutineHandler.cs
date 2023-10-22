@@ -1,16 +1,42 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
+[RequireComponent(typeof(AudioSource))]
 public class CoroutineHandler : MonoBehaviour
 {
-    public void StartDelayedAudioCoroutine(float delay, AudioSource audioSource)
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private List<AudioClip> _audioClips = new List<AudioClip>();
+    [SerializeField] private float _delayToTheSecondClip;
+
+    // Add a private reference to the currently playing coroutine
+    private Coroutine _audioCoroutine;
+
+    public void PlayAudio()
     {
-        StartCoroutine(PlayDelayedAudioCoroutine(delay, audioSource));
+        // Stop any previously playing coroutine before starting a new one
+        if (_audioCoroutine != null)
+        {
+            StopCoroutine(_audioCoroutine);
+        }
+
+        _audioCoroutine = StartCoroutine(Play());
     }
 
-    private IEnumerator PlayDelayedAudioCoroutine(float delay, AudioSource audioSource)
+    public void StopAudio()
     {
-        yield return new WaitForSeconds(delay);
-        audioSource.Play();
+        // Stop the currently playing coroutine and audio source
+        if (_audioCoroutine != null)
+        {
+            StopCoroutine(_audioCoroutine);
+        }
+        _audioSource.Stop();
+    }
+
+    IEnumerator Play()
+    {
+        _audioSource.PlayOneShot(_audioClips[0]);
+        yield return new WaitForSeconds(_delayToTheSecondClip);
+        _audioSource.PlayOneShot(_audioClips[1]);
     }
 }
